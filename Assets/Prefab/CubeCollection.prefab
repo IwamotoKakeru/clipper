@@ -64,15 +64,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -154,15 +169,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -244,15 +274,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -334,15 +379,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -424,15 +484,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -514,15 +589,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -604,15 +694,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -694,15 +799,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -784,15 +904,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -874,15 +1009,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -964,15 +1114,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1054,15 +1219,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1144,15 +1324,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1234,15 +1429,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1324,15 +1534,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1414,15 +1639,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1504,15 +1744,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1594,15 +1849,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1684,15 +1954,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1774,15 +2059,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1864,15 +2164,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -1954,15 +2269,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -2044,15 +2374,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -2134,15 +2479,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -2224,15 +2584,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -2314,15 +2689,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
@@ -2404,15 +2794,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4494870443716670468}
     m_Modifications:
+    - target: {fileID: -7726186249534060230, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 348695284939778096, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
       propertyPath: m_Name
       value: CubeObject (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7414126791596113512, guid: fe573e7abb8af466791f07600c0785e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: wool
       objectReference: {fileID: 0}
     - target: {fileID: 7903700409619490002, guid: fe573e7abb8af466791f07600c0785e3,
         type: 3}
