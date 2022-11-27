@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShaverCtrl : MonoBehaviour
 {
-    private float timeToDestroy = 0.1f;
+    private float timeToDestroy = 0.2f;
     Rigidbody collisionRb = null;
 
     void OnCollisionEnter(Collision collisionInfo)
