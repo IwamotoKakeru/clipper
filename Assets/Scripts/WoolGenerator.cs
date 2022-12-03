@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Polygon{
-    Vector3[] polyVertices = new Vector3[3];
+    private Vector3[] polyVertices = new Vector3[3];
+    public Vector3[] PolyVertices{
+        get => polyVertices;
+    }
 
     public Polygon(Vector3[] recPolyVertices){
         polyVertices = recPolyVertices;
-        // Debug.LogError("Vertex not specified");
     }
+
     public Vector3 GetCrossVector(){
         Vector3 crossVector;
         
