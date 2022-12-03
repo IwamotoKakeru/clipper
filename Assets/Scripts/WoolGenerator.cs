@@ -2,6 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public class Polygon{
+    Vector3[] polyVertices = new Vector3[3];
+    public Vector3 GetCrossVector(){
+        Vector3 crossVector;
+        
+        crossVector = Vector3.Cross(
+            polyVertices[1] - polyVertices[0],
+            polyVertices[2] - polyVertices[0]
+        );
+
+        return crossVector;
+    }
+
+    public float GetPolySize(){
+        return GetCrossVector().magnitude/2;
+    }
+
+    public Vector3 GetPolyCenterPos(){
+        Vector3 CenterPos;
+
+        CenterPos = (polyVertices[0]+polyVertices[1]+polyVertices[3])/3;
+
+        return CenterPos;
+    }
+}
+
 public class WoolGenerator : MonoBehaviour
 {
     public GameObject wool = null;
