@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Polygon{
     Vector3[] polyVertices = new Vector3[3];
+
+    public Polygon(Vector3[] recPolyVertices){
+        polyVertices = recPolyVertices;
+        // Debug.LogError("Vertex not specified");
+    }
     public Vector3 GetCrossVector(){
         Vector3 crossVector;
         
@@ -39,10 +44,7 @@ public class WoolGenerator : MonoBehaviour
 
     void Start()
     {
-        // RandomInstantiate();
-        // GenerateOnTheVertics();
         GenerateOnPlane();
-        
     }
 
     void RandomInstantiate(){
@@ -68,14 +70,14 @@ public class WoolGenerator : MonoBehaviour
             Instantiate(wool,vertices[i],Quaternion.identity,this.transform);
         }
 
-    } void GenerateOnPlane(){ 
+    } 
+    void GenerateOnPlane(){ 
         woolMesh = GetComponent<MeshFilter>().mesh;
 
         List<Vector3> vertices = new List<Vector3>();
         List<int> tris = new List<int>();
 
         vertices.AddRange(woolMesh.vertices);
-        //頂点の番号が順番に入る
         tris.AddRange(woolMesh.triangles);
 
         if(tris.Count%3 != 0) Debug.LogError("Incorrect vertices count!");
@@ -88,6 +90,7 @@ public class WoolGenerator : MonoBehaviour
                 vertices[tris[i+1]], 
                 vertices[tris[i+2]]
             };
+
 
             polyCount++;
         }
