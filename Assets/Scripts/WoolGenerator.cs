@@ -52,6 +52,9 @@ public class WoolGenerator : MonoBehaviour
         //頂点の番号が順番に入る
         tris.AddRange(woolMesh.triangles);
 
+        if(tris.Count%3 != 0) Debug.LogError("Incorrect vertices count!");
+
+        int polyCount = 0;
         for(int i=0;i<tris.Count;i=i+3){
 
             Vector3[] polyVertices={
@@ -60,11 +63,10 @@ public class WoolGenerator : MonoBehaviour
                 vertices[tris[i+2]]
             };
 
-            Debug.Log(polyVertices[0]);
-            Debug.Log(polyVertices[1]);
-            Debug.Log(polyVertices[2]);
+            polyCount++;
         }
 
+        Debug.Log(polyCount);
         Debug.Log(vertices.Count);
         Debug.Log(tris.Count);
     }
