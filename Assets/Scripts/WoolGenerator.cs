@@ -22,7 +22,7 @@ public class Polygon{
     public Vector3 GetPolyCenterPos(){
         Vector3 CenterPos;
 
-        CenterPos = (polyVertices[0]+polyVertices[1]+polyVertices[3])/3;
+        CenterPos = (polyVertices[0]+polyVertices[1]+polyVertices[2])/3;
 
         return CenterPos;
     }
