@@ -14,7 +14,8 @@ public class WoolGenerator : MonoBehaviour
     void Start()
     {
         // RandomInstantiate();
-        GenerateOnTheVertics();
+        // GenerateOnTheVertics();
+        GenerateOnPlane();
         
     }
 
@@ -40,13 +41,32 @@ public class WoolGenerator : MonoBehaviour
             vertices[i]= this.transform.TransformPoint(vertices[i]);
             Instantiate(wool,vertices[i],Quaternion.identity,this.transform);
         }
+
     } void GenerateOnPlane(){ 
         woolMesh = GetComponent<MeshFilter>().mesh;
-        List<int> tris = new List<int>();
+
         List<Vector3> vertices = new List<Vector3>();
+        List<int> tris = new List<int>();
+
         vertices.AddRange(woolMesh.vertices);
+        //頂点の番号が順番に入る
         tris.AddRange(woolMesh.triangles);
-        
+
+        for(int i=0;i<tris.Count;i=i+3){
+
+            Vector3[] polyVertices={
+                vertices[tris[i]], 
+                vertices[tris[i+1]], 
+                vertices[tris[i+2]]
+            };
+
+            Debug.Log(polyVertices[0]);
+            Debug.Log(polyVertices[1]);
+            Debug.Log(polyVertices[2]);
+        }
+
+        Debug.Log(vertices.Count);
+        Debug.Log(tris.Count);
     }
 
 
