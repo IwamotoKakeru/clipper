@@ -82,22 +82,21 @@ public class WoolGenerator : MonoBehaviour
 
         if(tris.Count%3 != 0) Debug.LogError("Incorrect vertices count!");
 
-        int polyCount = 0;
-        for(int i=0;i<tris.Count;i=i+3){
+        List<Polygon> polygons = new List<Polygon>();
 
+        for(int i=0;i<tris.Count;i=i+3){
             Vector3[] polyVertices={
                 vertices[tris[i]], 
                 vertices[tris[i+1]], 
                 vertices[tris[i+2]]
             };
 
-
-            polyCount++;
+            polygons.Add(new Polygon(polyVertices));
         }
 
-        Debug.Log(polyCount);
         Debug.Log(vertices.Count);
         Debug.Log(tris.Count);
+        Debug.Log(polygons.Count);
     }
 
 
