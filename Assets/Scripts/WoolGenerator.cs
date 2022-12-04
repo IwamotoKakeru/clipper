@@ -41,10 +41,6 @@ public class WoolGenerator : MonoBehaviour
     public GameObject wool = null;
     private Mesh woolMesh = null;
 
-    private float lowerRange = -0.5f,higherRange = 0.5f;
-    private int numOfGeneratedWool = 1000;
-    private Vector3 generatePos;
-
     void Start()
     {
         GenerateOnPlane();
