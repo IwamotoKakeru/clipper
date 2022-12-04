@@ -97,10 +97,15 @@ public class WoolGenerator : MonoBehaviour
             polygons.Add(new Polygon(polyVertices));
         }
 
+        foreach(Polygon polygon in polygons){
+            Vector3 instantiatePos;
+            instantiatePos = transform.TransformPoint(polygon.GetPolyCenterPos());
+            Instantiate(wool,instantiatePos,Quaternion.identity,this.transform);
+        }
+
         Debug.Log(vertices.Count);
         Debug.Log(tris.Count);
         Debug.Log(polygons.Count);
     }
-
 
 }
