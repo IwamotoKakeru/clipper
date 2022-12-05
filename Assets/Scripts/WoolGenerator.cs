@@ -8,31 +8,21 @@ public class Polygon{
         get => polyVertices;
     }
 
+    public Vector3 CrossVector {get; private set;}
+    public float Size {get; private set;}
+    public Vector3 CenterPos{get; private set;}
+
     public Polygon(Vector3[] recPolyVertices){
         polyVertices = recPolyVertices;
-    }
 
-    public Vector3 GetCrossVector(){
-        Vector3 crossVector;
-        
-        crossVector = Vector3.Cross(
+        CrossVector = Vector3.Cross(
             polyVertices[1] - polyVertices[0],
             polyVertices[2] - polyVertices[0]
         );
 
-        return crossVector;
-    }
-
-    public float GetPolySize(){
-        return GetCrossVector().magnitude/2;
-    }
-
-    public Vector3 GetPolyCenterPos(){
-        Vector3 CenterPos;
+        Size = CrossVector.magnitude/2;
 
         CenterPos = (polyVertices[0]+polyVertices[1]+polyVertices[2])/3;
-
-        return CenterPos;
     }
 }
 
@@ -71,13 +61,14 @@ public class WoolGenerator : MonoBehaviour
 
         foreach(Polygon polygon in polygons){
             Vector3 instantiatePos;
-            instantiatePos = transform.TransformPoint(polygon.GetPolyCenterPos());
+            instantiatePos = transform.TransformPoint(polygon.CenterPos);
+
+            float polySize = polygon.Size;
+
             Instantiate(wool,instantiatePos,Quaternion.identity,this.transform);
+            Debug.Log(polySize);
         }
 
-        Debug.Log(vertices.Count);
-        Debug.Log(tris.Count);
-        Debug.Log(polygons.Count);
     }
 
 }
