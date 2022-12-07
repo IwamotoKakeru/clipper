@@ -70,8 +70,9 @@ public class WoolGenerator : MonoBehaviour
             Instantiate(wool,instantiatePos,Quaternion.identity,this.transform);
             polySizes.Add(polySize);
         }
-        Debug.Log(polySizes.Max());
-        Debug.Log(polySizes.Min());
+        Debug.Log("Num of Polygons:"+polygons.Count);
+        Debug.Log("Max Size:"+polySizes.Max());
+        Debug.Log("Min Size:"+polySizes.Min());
 
     }
 
