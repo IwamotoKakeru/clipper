@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Polygon{
     private Vector3[] polyVertices = new Vector3[3];
@@ -41,6 +42,7 @@ public class WoolGenerator : MonoBehaviour
 
         List<Vector3> vertices = new List<Vector3>();
         List<int> triangleIndex = new List<int>();
+        List<float> polySizes = new List<float>();
 
         vertices.AddRange(woolMesh.vertices);
         triangleIndex.AddRange(woolMesh.triangles);
@@ -66,8 +68,10 @@ public class WoolGenerator : MonoBehaviour
             float polySize = polygon.Size;
 
             Instantiate(wool,instantiatePos,Quaternion.identity,this.transform);
-            Debug.Log(polySize);
+            polySizes.Add(polySize);
         }
+        Debug.Log(polySizes.Max());
+        Debug.Log(polySizes.Min());
 
     }
 
