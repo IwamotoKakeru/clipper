@@ -40,20 +40,20 @@ public class WoolGenerator : MonoBehaviour
         woolMesh = GetComponent<MeshFilter>().mesh;
 
         List<Vector3> vertices = new List<Vector3>();
-        List<int> tris = new List<int>();
+        List<int> triangleIndex = new List<int>();
 
         vertices.AddRange(woolMesh.vertices);
-        tris.AddRange(woolMesh.triangles);
+        triangleIndex.AddRange(woolMesh.triangles);
 
-        if(tris.Count%3 != 0) Debug.LogError("Incorrect vertices count!");
+        if(triangleIndex.Count%3 != 0) Debug.LogError("Incorrect vertices count!");
 
         List<Polygon> polygons = new List<Polygon>();
 
-        for(int i=0;i<tris.Count;i=i+3){
+        for(int i=0;i<triangleIndex.Count;i=i+3){
             Vector3[] polyVertices={
-                vertices[tris[i]], 
-                vertices[tris[i+1]], 
-                vertices[tris[i+2]]
+                vertices[triangleIndex[i]], 
+                vertices[triangleIndex[i+1]], 
+                vertices[triangleIndex[i+2]]
             };
 
             polygons.Add(new Polygon(polyVertices));
