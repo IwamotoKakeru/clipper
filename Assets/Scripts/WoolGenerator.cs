@@ -41,21 +41,21 @@ public class WoolGenerator : MonoBehaviour
         woolMesh = GetComponent<MeshFilter>().mesh;
 
         List<Vector3> vertices = new List<Vector3>();
-        List<int> triangleIndex = new List<int>();
+        List<int> verticesIndex = new List<int>();
         List<float> polySizes = new List<float>();
 
         vertices.AddRange(woolMesh.vertices);
-        triangleIndex.AddRange(woolMesh.triangles);
+        verticesIndex.AddRange(woolMesh.triangles);
 
-        if(triangleIndex.Count%3 != 0) Debug.LogError("Incorrect vertices count!");
+        if(verticesIndex.Count%3 != 0) Debug.LogError("Incorrect vertices count!");
 
         List<Polygon> polygons = new List<Polygon>();
 
-        for(int i=0;i<triangleIndex.Count;i=i+3){
+        for(int i=0;i<verticesIndex.Count;i=i+3){
             Vector3[] polyVertices={
-                vertices[triangleIndex[i]], 
-                vertices[triangleIndex[i+1]], 
-                vertices[triangleIndex[i+2]]
+                vertices[verticesIndex[i]], 
+                vertices[verticesIndex[i+1]], 
+                vertices[verticesIndex[i+2]]
             };
 
             polygons.Add(new Polygon(polyVertices));
@@ -70,6 +70,7 @@ public class WoolGenerator : MonoBehaviour
             Instantiate(wool,instantiatePos,Quaternion.identity,this.transform);
             polySizes.Add(polySize);
         }
+
         Debug.Log("Num of Polygons:"+polygons.Count);
         Debug.Log("Max Size:"+polySizes.Max());
         Debug.Log("Min Size:"+polySizes.Min());
