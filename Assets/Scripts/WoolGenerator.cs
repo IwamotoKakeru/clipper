@@ -26,8 +26,19 @@ public class Polygon{
         CenterPos = (polyVertices[0]+polyVertices[1]+polyVertices[2])/3;
     }
 
-    public void GetPosOnPoly(){
-        
+    public Vector3 GetRandomSurfacePos(){
+        //空間ベクトルの点の存在範囲より三角形上のランダムな座標を得る
+        float a = Random.value;
+        float b = Random.value;
+
+        if(a+b>1f){
+            a = 1f -a;
+            b = 1f -b;
+        }
+
+        float c = 1f - a - b;
+
+        return a*polyVertices[0]+b*polyVertices[1]+c*polyVertices[2];
     }
 }
 
