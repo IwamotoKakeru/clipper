@@ -25,6 +25,10 @@ public class Polygon{
 
         CenterPos = (polyVertices[0]+polyVertices[1]+polyVertices[2])/3;
     }
+
+    public void GetPosOnPoly(){
+        
+    }
 }
 
 public class WoolGenerator : MonoBehaviour
