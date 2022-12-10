@@ -28,17 +28,20 @@ public class Polygon{
 
     public Vector3 GetRandomSurfacePos(){
         //空間ベクトルの点の存在範囲より三角形上のランダムな座標を得る
-        float a = Random.value;
-        float b = Random.value;
+        Vector3 RandomSurfacePos;
 
-        if(a+b>1f){
-            a = 1f -a;
-            b = 1f -b;
+        float s = Random.value;
+        float t = Random.value;
+
+        if(s+t>1f){
+            s = 1f -s;
+            t = 1f -t;
         }
+        float u = 1f - s - t;
 
-        float c = 1f - a - b;
+        RandomSurfacePos = s*polyVertices[0]+t*polyVertices[1]+u*polyVertices[2];
 
-        return a*polyVertices[0]+b*polyVertices[1]+c*polyVertices[2];
+        return RandomSurfacePos;
     }
 }
 
@@ -67,6 +70,7 @@ public class WoolGenerator : MonoBehaviour
         List<Polygon> polygons = new List<Polygon>();
 
         for(int i=0;i<verticesIndex.Count;i=i+3){
+
             Vector3[] polyVertices={
                 vertices[verticesIndex[i]], 
                 vertices[verticesIndex[i+1]], 
@@ -77,13 +81,23 @@ public class WoolGenerator : MonoBehaviour
         }
 
         foreach(Polygon polygon in polygons){
+            polySizes.Add(polygon.Size);
+        }
+
+        foreach(Polygon polygon in polygons){
             Vector3 instantiatePos;
-            instantiatePos = transform.TransformPoint(polygon.CenterPos);
+            int sizeMultiple =  (int)(polygon.Size / polySizes.Min());
 
-            float polySize = polygon.Size;
+            if(sizeMultiple>1){
+                for(int i=0;i<sizeMultiple;i++){
+                    instantiatePos = transform.TransformPoint(polygon.GetRandomSurfacePos());
+                    Instantiate(wool, instantiatePos, Quaternion.identity, this.transform);
+                }
+            }else{
+                instantiatePos = transform.TransformPoint(polygon.CenterPos);
+                Instantiate(wool, instantiatePos, Quaternion.identity, this.transform);
+            }
 
-            Instantiate(wool,instantiatePos,Quaternion.identity,this.transform);
-            polySizes.Add(polySize);
         }
 
         Debug.Log("Num of Polygons:"+polygons.Count);
