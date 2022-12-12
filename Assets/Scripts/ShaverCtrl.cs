@@ -10,7 +10,8 @@ public class ShaverCtrl : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo)
     {
-        if(collisionInfo.gameObject.CompareTag("wool")){
+        if (collisionInfo.gameObject.CompareTag("wool"))
+        {
             VibrationCtrl.ShortVibration();
 
             collisionRb = collisionInfo.gameObject.GetComponent<Rigidbody>();
@@ -19,7 +20,7 @@ public class ShaverCtrl : MonoBehaviour
             collisionCol = collisionInfo.gameObject.GetComponent<BoxCollider>();
             collisionCol.isTrigger = true;
 
-            Destroy(collisionInfo.gameObject,timeToDestroy);
+            Destroy(collisionInfo.gameObject, timeToDestroy);
         }
     }
 }
