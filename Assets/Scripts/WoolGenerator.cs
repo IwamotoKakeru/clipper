@@ -68,6 +68,9 @@ public class WoolGenerator : MonoBehaviour
         List<int> verticesIndex = new List<int>();
         List<float> polySizes = new List<float>();
 
+        int timesOfGenerate = 10;
+        int num = 0;
+
         vertices.AddRange(woolMesh.vertices);
         verticesIndex.AddRange(woolMesh.triangles);
 
@@ -98,19 +101,20 @@ public class WoolGenerator : MonoBehaviour
             int sizeMultiple = (int)(polygon.Size / polySizes.Min());
 
             // if (sizeMultiple > 1)
-            if (false)
-            {
-                for (int i = 0; i < sizeMultiple; i++)
-                {
-                    instantiatePos = transform.TransformPoint(polygon.GetRandomSurfacePos());
-                    Instantiate(wool, instantiatePos, Quaternion.identity, this.transform);
-                }
-            }
-            else
+            // {
+            //     for (int i = 0; i < sizeMultiple; i++)
+            //     {
+            //         instantiatePos = transform.TransformPoint(polygon.GetRandomSurfacePos());
+            //         Instantiate(wool, instantiatePos, Quaternion.identity, this.transform);
+            //     }
+            // }
+            // else
+            if ((num % timesOfGenerate) == 0)
             {
                 instantiatePos = transform.TransformPoint(polygon.CenterPos);
                 Instantiate(wool, instantiatePos, Quaternion.identity, this.transform);
             }
+            num++;
 
         }
 
