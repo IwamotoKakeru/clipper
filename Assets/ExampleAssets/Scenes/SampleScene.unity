@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788587e994f1943f3856c1c332db429b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ReferencePointPrefab: {fileID: 699116700858801164, guid: 819a06659339f494c8e5bf6ba63dd17f,
+  m_ReferencePointPrefab: {fileID: 6188451313310841224, guid: 1df4b7ff1e7404b429e8a412c8ca896c,
     type: 3}
 --- !u!1 &705507993
 GameObject:

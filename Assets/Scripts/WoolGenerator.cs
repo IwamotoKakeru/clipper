@@ -97,7 +97,8 @@ public class WoolGenerator : MonoBehaviour
             Vector3 instantiatePos;
             int sizeMultiple = (int)(polygon.Size / polySizes.Min());
 
-            if (sizeMultiple > 1)
+            // if (sizeMultiple > 1)
+            if (false)
             {
                 for (int i = 0; i < sizeMultiple; i++)
                 {
