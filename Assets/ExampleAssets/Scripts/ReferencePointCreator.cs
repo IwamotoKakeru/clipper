@@ -22,7 +22,8 @@ public class ReferencePointCreator : MonoBehaviour
     {
         Set,
         Prepare,
-        Game
+        Game,
+        Clear
     }
     private State state = State.Set;
 

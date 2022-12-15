@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SheepCtrl : MonoBehaviour
 {
@@ -12,7 +13,6 @@ public class SheepCtrl : MonoBehaviour
     void Start()
     {
         HP = 4;
-        wools = GameObject.FindGameObjectsWithTag("wool");
     }
 
     void Update()
