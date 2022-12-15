@@ -13,6 +13,6 @@ public class SheepTextCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sheepRectTfm.LookAt(Camera.main.transform);
+        sheepRectTfm.rotation = Quaternion.LookRotation(sheepRectTfm.position - Camera.main.transform.position);
     }
 }
