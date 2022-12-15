@@ -18,6 +18,14 @@ public class ReferencePointCreator : MonoBehaviour
     [SerializeField]
     GameObject m_ReferencePointPrefab;
 
+    private enum State
+    {
+        Set,
+        Prepare,
+        Game
+    }
+    private State state = State.Set;
+
     public GameObject referencePointPrefab
     {
         get => m_ReferencePointPrefab;
@@ -53,7 +61,7 @@ public class ReferencePointCreator : MonoBehaviour
             return;
 
         var touch = Input.GetTouch(0);
-        if (touch.phase != TouchPhase.Began)
+        if (touch.phase != TouchPhase.Began || state != State.Set)
             return;
 
         if (m_RaycastManager.Raycast(touch.position, s_Hits, TrackableType.PlaneWithinPolygon))
@@ -70,6 +78,8 @@ public class ReferencePointCreator : MonoBehaviour
             // with the reference point, since a reference point attached to an ARPlane will be updated automatically by the ARReferencePointManager as the ARPlane's exact position is refined.
             var referencePoint = m_ReferencePointManager.AttachReferencePoint(hitPlane, hitPose);
             Instantiate(m_ReferencePointPrefab, referencePoint.transform);
+
+            state = State.Prepare;
 
             if (referencePoint == null)
             {
