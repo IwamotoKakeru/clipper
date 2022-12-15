@@ -55,7 +55,7 @@ public class WoolGenerator : MonoBehaviour
     public GameObject wool = null;
     private Mesh woolMesh = null;
 
-    void Start()
+    void Awake()
     {
         GenerateOnPlane();
     }

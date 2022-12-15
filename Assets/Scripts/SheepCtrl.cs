@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class SheepCtrl : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int HP { get; private set; }
+
+    private GameObject[] wools;
+
+
     void Start()
     {
-        
+        HP = 4;
+        wools = GameObject.FindGameObjectsWithTag("wool");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        wools = GameObject.FindGameObjectsWithTag("wool");
+        Debug.Log(wools.Length);
+    }
+
+    public void Damage(int damageAmount)
+    {
+        HP = HP - damageAmount;
     }
 }
