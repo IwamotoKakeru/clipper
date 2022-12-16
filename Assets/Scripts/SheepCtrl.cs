@@ -7,7 +7,7 @@ public class SheepCtrl : MonoBehaviour
 {
     public int HP { get; private set; }
 
-    private GameObject[] wools;
+    public GameObject[] Wools { get; private set; }
     private int maxWoolNum;
 
     private SheepTextCtrl sheepText;
@@ -16,15 +16,15 @@ public class SheepCtrl : MonoBehaviour
     {
         HP = 4;
         sheepText = GameObject.Find("SheepText").GetComponent<SheepTextCtrl>();
-        wools = GameObject.FindGameObjectsWithTag("wool");
-        maxWoolNum = wools.Length;
+        Wools = GameObject.FindGameObjectsWithTag("wool");
+        maxWoolNum = Wools.Length;
     }
 
     void Update()
     {
-        wools = GameObject.FindGameObjectsWithTag("wool");
-        Debug.Log(wools.Length);
-        sheepText.SetText(wools.Length.ToString() + "/" + maxWoolNum);
+        Wools = GameObject.FindGameObjectsWithTag("wool");
+        Debug.Log("NumOfWools:" + Wools.Length);
+        sheepText.SetText(Wools.Length.ToString() + "/" + maxWoolNum);
     }
 
     public void Damage(int damageAmount)

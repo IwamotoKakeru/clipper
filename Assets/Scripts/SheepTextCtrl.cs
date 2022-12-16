@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class SheepTextCtrl : MonoBehaviour
 {
     private RectTransform sheepRectTfm;
+    private GameObject camera;
     private Text text;
+
 
     public void SetText(string str)
     {
         text.text = str;
+        camera = GameObject.FindGameObjectWithTag("MainCamera");
     }
     void Start()
     {
@@ -21,6 +24,6 @@ public class SheepTextCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sheepRectTfm.rotation = Quaternion.LookRotation(sheepRectTfm.position - Camera.main.transform.position);
+        sheepRectTfm.rotation = Quaternion.LookRotation(sheepRectTfm.position - camera.transform.position);
     }
 }
