@@ -100,15 +100,6 @@ public class WoolGenerator : MonoBehaviour
             Vector3 instantiatePos;
             int sizeMultiple = (int)(polygon.Size / polySizes.Min());
 
-            // if (sizeMultiple > 1)
-            // {
-            //     for (int i = 0; i < sizeMultiple; i++)
-            //     {
-            //         instantiatePos = transform.TransformPoint(polygon.GetRandomSurfacePos());
-            //         Instantiate(wool, instantiatePos, Quaternion.identity, this.transform);
-            //     }
-            // }
-            // else
             if ((num % timesOfGenerate) == 0)
             {
                 instantiatePos = transform.TransformPoint(polygon.CenterPos);
