@@ -19,25 +19,8 @@ public class ReferencePointCreator : MonoBehaviour
     GameObject m_ReferencePointPrefab;
 
     private GameObject sheepCtrlObject;
-    public GameObject SheepCtrlObject
-    {
-        get
-        {
-            return sheepCtrlObject;
-        }
-    }
-    private SheepCtrl sheepCtrl;
-    public GameObject timerCtrlObject;
-    private TimerCtrl timerCtrl;
 
-    private enum State
-    {
-        Set,
-        Prepare,
-        Game,
-        Clear
-    }
-    private State state = State.Set;
+    private GameCtrl gameCtrl;
 
     public GameObject referencePointPrefab
     {
@@ -69,12 +52,16 @@ public class ReferencePointCreator : MonoBehaviour
 
     void Start()
     {
-        timerCtrl = timerCtrlObject.GetComponent<Transform>().Find("Text").GetComponent<TimerCtrl>();
+        gameCtrl = this.GetComponent<GameCtrl>();
     }
 
     void Update()
     {
         // If there is no tap, then simply do nothing until the next call to Update().
+        if (sheepCtrlObject != null)
+        {
+            return;
+        }
         if (Input.touchCount == 0)
         {
             Debug.Log("Not touched!");
@@ -82,9 +69,9 @@ public class ReferencePointCreator : MonoBehaviour
         }
 
         var touch = Input.GetTouch(0);
-        if (touch.phase != TouchPhase.Began || state == State.Clear)
+        if (touch.phase != TouchPhase.Began)
         {
-            Debug.Log("Loop Out");
+            Debug.Log("Not began touch");
             return;
         }
 
@@ -103,11 +90,7 @@ public class ReferencePointCreator : MonoBehaviour
             // with the reference point, since a reference point attached to an ARPlane will be updated automatically by the ARReferencePointManager as the ARPlane's exact position is refined.
             var referencePoint = m_ReferencePointManager.AttachReferencePoint(hitPlane, hitPose);
             sheepCtrlObject = Instantiate(m_ReferencePointPrefab, referencePoint.transform);
-
-            state = State.Prepare;
-            timerCtrl.StartCount();
-            sheepCtrl = sheepCtrlObject.GetComponent<Transform>().Find("Body").GetComponent<SheepCtrl>();
-            state = State.Game;
+            gameCtrl.SheepCtrlObject = sheepCtrlObject;
 
             if (referencePoint == null)
             {
@@ -118,14 +101,6 @@ public class ReferencePointCreator : MonoBehaviour
                 // Stores the reference point so that it may be removed later.
                 m_ReferencePoints.Add(referencePoint);
             }
-        }
-        Debug.Log("Counting :" + sheepCtrl.Wools.Length.ToString());
-
-        if (sheepCtrl.Wools.Length <= 0)
-        {
-            state = State.Clear;
-            timerCtrl.StopCount();
-            Debug.Log("Count Zero:" + sheepCtrl.Wools.Length.ToString());
         }
     }
 
