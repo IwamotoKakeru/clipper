@@ -392,6 +392,7 @@ GameObject:
   - component: {fileID: 388525034}
   - component: {fileID: 388525033}
   - component: {fileID: 388525035}
+  - component: {fileID: 388525036}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -481,6 +482,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ReferencePointPrefab: {fileID: 4728918569337186553, guid: 1df4b7ff1e7404b429e8a412c8ca896c,
     type: 3}
+--- !u!114 &388525036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388525029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4706deca5f774131b635f31d5bfc525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   timerCtrlObject: {fileID: 40919614}
 --- !u!1 &705507993
 GameObject:

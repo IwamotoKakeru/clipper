@@ -5,11 +5,13 @@ using UnityEngine;
 public class ShaverCtrl : MonoBehaviour
 {
     private float timeToDestroy = 0.2f;
+    private int damageAmount = 1;
     Rigidbody collisionRb = null;
     BoxCollider collisionCol = null;
 
     void OnCollisionEnter(Collision collisionInfo)
     {
+        Debug.Log("Hit Something");
         if (collisionInfo.gameObject.CompareTag("wool"))
         {
             VibrationCtrl.ShortVibration();
@@ -21,6 +23,11 @@ public class ShaverCtrl : MonoBehaviour
             collisionCol.isTrigger = true;
 
             Destroy(collisionInfo.gameObject, timeToDestroy);
+        }
+        if (collisionInfo.gameObject.CompareTag("sheep"))
+        {
+            SheepCtrl sheepCtrl = collisionInfo.gameObject.GetComponent<SheepCtrl>();
+            sheepCtrl.Damage(damageAmount);
         }
     }
 }

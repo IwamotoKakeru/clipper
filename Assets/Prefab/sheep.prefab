@@ -102,9 +102,12 @@ GameObject:
   - component: {fileID: 4728918568260116011}
   - component: {fileID: 4728918568260116013}
   - component: {fileID: 4728918568260116012}
-  m_Layer: 0
+  - component: {fileID: 8108590449707884595}
+  - component: {fileID: 728009032186826294}
+  - component: {fileID: 6824258586351489075}
+  m_Layer: 8
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: sheep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,7 +152,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: b7dd2d35dd29b4093821e4eb9b8ea6c4, type: 3}
+  - {fileID: 2100000, guid: 545814cf7573743d98992f5e9c646f3d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -170,6 +173,48 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8108590449707884595
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918568260116010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6239881831769578202, guid: b7dd2d35dd29b4093821e4eb9b8ea6c4, type: 3}
+--- !u!54 &728009032186826294
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918568260116010}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6824258586351489075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918568260116010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad572a35008d49aa91a97396074abfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4728918568843527722
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,9 +228,12 @@ GameObject:
   - component: {fileID: 4728918568843527725}
   - component: {fileID: 4728918568843527724}
   - component: {fileID: 4728918568843527727}
-  m_Layer: 0
+  - component: {fileID: 6127369721070002479}
+  - component: {fileID: 5271883977517544371}
+  - component: {fileID: 15138271916638600}
+  m_Layer: 8
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: sheep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,7 +278,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: b7dd2d35dd29b4093821e4eb9b8ea6c4, type: 3}
+  - {fileID: 2100000, guid: 545814cf7573743d98992f5e9c646f3d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -274,6 +322,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bad572a35008d49aa91a97396074abfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!64 &6127369721070002479
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918568843527722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: b7dd2d35dd29b4093821e4eb9b8ea6c4, type: 3}
+--- !u!54 &5271883977517544371
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918568843527722}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &15138271916638600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918568843527722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313cf2e58d2ce4e34a4509bfb4fae5a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4728918568908729192
@@ -421,9 +511,12 @@ GameObject:
   - component: {fileID: 4728918570099078464}
   - component: {fileID: 4728918570099078466}
   - component: {fileID: 4728918570099078465}
-  m_Layer: 0
+  - component: {fileID: 7722163813171308231}
+  - component: {fileID: 5412934267868837553}
+  - component: {fileID: 2637615601768850999}
+  m_Layer: 8
   m_Name: RearLeg
-  m_TagString: Untagged
+  m_TagString: sheep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +561,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: b7dd2d35dd29b4093821e4eb9b8ea6c4, type: 3}
+  - {fileID: 2100000, guid: 545814cf7573743d98992f5e9c646f3d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -489,6 +582,48 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &7722163813171308231
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918570099078479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8691780276856062721, guid: b7dd2d35dd29b4093821e4eb9b8ea6c4, type: 3}
+--- !u!54 &5412934267868837553
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918570099078479}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2637615601768850999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918570099078479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad572a35008d49aa91a97396074abfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4728918570176376729
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,9 +635,12 @@ GameObject:
   - component: {fileID: 4728918570176376730}
   - component: {fileID: 4728918570176376732}
   - component: {fileID: 4728918570176376731}
-  m_Layer: 0
+  - component: {fileID: 1017079129856394822}
+  - component: {fileID: 6081287066893715986}
+  - component: {fileID: 946564101854398349}
+  m_Layer: 8
   m_Name: FrontLeg
-  m_TagString: Untagged
+  m_TagString: sheep
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -547,7 +685,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: b7dd2d35dd29b4093821e4eb9b8ea6c4, type: 3}
+  - {fileID: 2100000, guid: 545814cf7573743d98992f5e9c646f3d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -568,3 +706,45 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &1017079129856394822
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918570176376729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7387706064836869012, guid: b7dd2d35dd29b4093821e4eb9b8ea6c4, type: 3}
+--- !u!54 &6081287066893715986
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918570176376729}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &946564101854398349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4728918570176376729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad572a35008d49aa91a97396074abfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
