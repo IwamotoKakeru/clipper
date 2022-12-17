@@ -18,7 +18,7 @@ public class ReferencePointCreator : MonoBehaviour
     [SerializeField]
     GameObject m_ReferencePointPrefab;
 
-    private GameObject sheepCtrlObject;
+    private GameObject woolCtrlObject;
 
     private GameCtrl gameCtrl;
 
@@ -58,7 +58,7 @@ public class ReferencePointCreator : MonoBehaviour
     void Update()
     {
         // If there is no tap, then simply do nothing until the next call to Update().
-        if (sheepCtrlObject != null)
+        if (woolCtrlObject != null)
         {
             return;
         }
@@ -89,8 +89,8 @@ public class ReferencePointCreator : MonoBehaviour
             // This prefab instance is parented to the reference point to make sure the position of the prefab is consistent
             // with the reference point, since a reference point attached to an ARPlane will be updated automatically by the ARReferencePointManager as the ARPlane's exact position is refined.
             var referencePoint = m_ReferencePointManager.AttachReferencePoint(hitPlane, hitPose);
-            sheepCtrlObject = Instantiate(m_ReferencePointPrefab, referencePoint.transform);
-            gameCtrl.SheepCtrlObject = sheepCtrlObject;
+            woolCtrlObject = Instantiate(m_ReferencePointPrefab, referencePoint.transform);
+            gameCtrl.WoolCtrlObject = woolCtrlObject;
 
             if (referencePoint == null)
             {

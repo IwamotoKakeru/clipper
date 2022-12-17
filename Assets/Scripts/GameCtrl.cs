@@ -5,15 +5,15 @@ using UnityEngine.XR.ARSubsystems;
 
 public class GameCtrl : MonoBehaviour
 {
-    private GameObject sheepCtrlObject;
-    public GameObject SheepCtrlObject
+    private GameObject woolCtrlObject;
+    public GameObject WoolCtrlObject
     {
         set
         {
-            sheepCtrlObject = value;
+            woolCtrlObject = value;
         }
     }
-    private SheepCtrl sheepCtrl;
+    private WoolGeneralCtrl woolCtrl;
     public GameObject timerCtrlObject;
     private TimerCtrl timerCtrl;
 
@@ -36,7 +36,7 @@ public class GameCtrl : MonoBehaviour
     void Update()
     {
 
-        if (sheepCtrlObject == null)
+        if (woolCtrlObject == null)
         {
             state = State.Set;
         }
@@ -44,16 +44,16 @@ public class GameCtrl : MonoBehaviour
         {
             state = State.Prepare;
             timerCtrl.StartCount();
-            sheepCtrl = sheepCtrlObject.GetComponent<Transform>().Find("Body").GetComponent<SheepCtrl>();
+            woolCtrl = woolCtrlObject.GetComponent<Transform>().Find("Body").GetComponent<WoolGeneralCtrl>();
             state = State.Game;
 
-            Debug.Log("Counting :" + sheepCtrl.Wools.Length.ToString());
+            Debug.Log("Counting :" + woolCtrl.Wools.Length.ToString());
 
-            if (sheepCtrl.Wools.Length <= 0)
+            if (woolCtrl.Wools.Length <= 0)
             {
                 state = State.Clear;
                 timerCtrl.StopCount();
-                Debug.Log("Count Zero:" + sheepCtrl.Wools.Length.ToString());
+                Debug.Log("Count Zero:" + woolCtrl.Wools.Length.ToString());
             }
         }
     }
