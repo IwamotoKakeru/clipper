@@ -43,8 +43,11 @@ public class GameCtrl : MonoBehaviour
         else
         {
             state = State.Prepare;
-            timerCtrl.StartCount();
-            woolCtrl = woolCtrlObject.GetComponent<Transform>().Find("Body").GetComponent<WoolGeneralCtrl>();
+            if (woolCtrl == null)
+            {
+                timerCtrl.StartCount();
+                woolCtrl = woolCtrlObject.GetComponent<Transform>().Find("Body").GetComponent<WoolGeneralCtrl>();
+            }
             state = State.Game;
 
             Debug.Log("Counting :" + woolCtrl.Wools.Length.ToString());
