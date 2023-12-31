@@ -54,7 +54,7 @@ public class WoolGenerator : MonoBehaviour
 
             if ((num % timesOfGenerate) == 0)
             {
-                instantiatePos = transform.TransformPoint(polygon.CenterPos);
+                instantiatePos = transform.TransformPoint(polygon.GetRandomSurfacePos());
                 Instantiate(wool, instantiatePos, Quaternion.identity, this.transform);
             }
             num++;
